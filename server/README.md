@@ -10,11 +10,15 @@ Requirements
 Usage
 =====
 
- 1. Bootstrap host with Chef & perform initial Chef run:
+ 1. Download necessary cookbooks:
+```
+bundle install
+```
+ 2. Bootstrap host with Chef & perform initial Chef run:
 ```
 knife solo prepare user@<hostname or ip>
 ```
- 2. Push changes & re-run Chef run:
+ 3. Push changes & re-run Chef run:
 ```
 knife solo cook user@<hostname or ip>
 ```
